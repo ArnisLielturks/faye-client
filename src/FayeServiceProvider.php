@@ -1,6 +1,6 @@
 <?php
 
-namespace ArnisLielturks;
+namespace ArnisLielturks\FayeClient;
 
 use Illuminate\Support\ServiceProvider;
 use ArnisLielturks\FayeService;

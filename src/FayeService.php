@@ -1,6 +1,6 @@
 <?php
 
-namespace ArnisLielturks;
+namespace ArnisLielturks\FayeClient;
 
 use Nc\FayeClient\Client;
 use Nc\FayeClient\Adapter\CurlAdapter;
