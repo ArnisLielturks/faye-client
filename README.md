@@ -1,5 +1,6 @@
 # faye-client
-## Installation
+## This is a wrapper for awesome https://github.com/nchaulet/faye-client library. Intended for use in Laravel 5+ applications
+### Installation
 1. Install the package via composer:
  ```sh
 composer require arnislielturks/faye-client
