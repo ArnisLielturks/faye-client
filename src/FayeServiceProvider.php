@@ -3,7 +3,7 @@
 namespace ArnisLielturks;
 
 use Illuminate\Support\ServiceProvider;
-use App\Services\FayeService;
+use ArnisLielturks\FayeService;
 
 class FayeServiceProvider extends ServiceProvider
 {
