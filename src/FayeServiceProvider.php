@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace ArnisLielturks;
 
 use Illuminate\Support\ServiceProvider;
 use App\Services\FayeService;
@@ -26,7 +26,7 @@ class FayeServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('App\Services\FayeServiceInterface', function ($app) {
+        $this->app->bind('ArnisLielturks\FayeServiceInterface', function ($app) {
             return new FayeService(config('faye'));
         });
     }
