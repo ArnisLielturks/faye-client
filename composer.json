@@ -1,0 +1,30 @@
+{
+    "name": "arnislielturks/faye-client",
+    "description": "Faye Client Service provider for laravel",
+    "keywords": [
+        "laravel",
+        "faye",
+        "faye-client"
+    ],
+    "homepage": "https://faye.jcoglan.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arnis Lielturks",
+            "email": "arnis.lielturks@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "nc/faye-client": "^1.1"
+    },
+    "require-dev": {
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArnisLielturks\\FayeClient\\": "src/"
+        }
+    }
+}
