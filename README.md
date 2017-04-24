@@ -9,7 +9,7 @@ composer require arnislielturks/faye-client
 2. Register the provider in config/app.php
  ```php
 // 'providers' => [
-    ArnisLielturks\FayeServiceProvider::class,
+    ArnisLielturks\FayeClient\FayeServiceProvider::class,
 // ];
 ```
 
@@ -27,7 +27,7 @@ return [
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use ArnisLielturks\FayeServiceInterface;
+use ArnisLielturks\FayeClient\FayeServiceInterface;
 
 class TestController extends Controller
 {
