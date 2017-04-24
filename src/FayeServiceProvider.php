@@ -3,7 +3,7 @@
 namespace ArnisLielturks\FayeClient;
 
 use Illuminate\Support\ServiceProvider;
-use ArnisLielturks\FayeService;
+use ArnisLielturks\FayeClient\FayeService;
 
 class FayeServiceProvider extends ServiceProvider
 {
@@ -26,7 +26,7 @@ class FayeServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('ArnisLielturks\FayeServiceInterface', function ($app) {
+        $this->app->bind('ArnisLielturks\FayeClient\FayeServiceInterface', function ($app) {
             return new FayeService(config('faye'));
         });
     }
