@@ -9,14 +9,15 @@ composer require arnislielturks/faye-client
 2. Register the provider in config/app.php
  ```php
 // 'providers' => [
-    ArnisLielturks\FayeServiceProvider::class,
+    ArnisLielturks\FayeClient\FayeServiceProvider::class,
 // ];
 ```
 
 3. Add configuration file (config/faye.php) with the following content. This should point to the Faye service
 ```php
 return [
-    'server' => 'http://127.0.0.1:8000'
+    'server' => 'http://127.0.0.1:8000',
+    'token' => 'your-token-here'
 ];
 ```
 
@@ -27,7 +28,7 @@ return [
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use ArnisLielturks\FayeServiceInterface;
+use ArnisLielturks\FayeClient\FayeServiceInterface;
 
 class TestController extends Controller
 {
