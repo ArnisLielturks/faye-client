@@ -16,7 +16,8 @@ composer require arnislielturks/faye-client
 3. Add configuration file (config/faye.php) with the following content. This should point to the Faye service
 ```php
 return [
-    'server' => 'http://127.0.0.1:8000'
+    'server' => 'http://127.0.0.1:8000',
+    'token' => 'your-token-here'
 ];
 ```
 
